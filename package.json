@@ -19,7 +19,6 @@
   },
   "dependencies": {
     "flow-bin": "^0.42.0",
-    "twit": "^2.2.10",
-    "dotenv": "6.0.0"
+    "twit": "^2.2.10"
   }
 }
