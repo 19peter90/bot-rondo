@@ -1,7 +1,7 @@
 // /** @flow */
 
 const Twit = require('twit');
-//const config = require('./config');
+const config = require('./config');
 const getPrediccion = require('./helpers/getPrediccion');
 
 
