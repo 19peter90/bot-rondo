@@ -1,6 +1,14 @@
 /** @flow */
-export type Quotes = {
+export type Final = {
   text: string;
-  author: string;
-  hashtag: 0 | 1;
+  team1: string;
+  team2: string;
+}
+
+export type Clave = {
+  text: string;
+}
+
+export type Jugador = {
+  text: string;
 }

@@ -1,116 +1,45 @@
-/** @flow */
-import Twit from 'twit';
+// /** @flow */
+
+const Twit = require('twit');
+const config = require('./config');
+// const config2 = {
+//   consumer_key: "XZVgT1Nn6CzNI9ari9z6nfxWfY",
+//   consumer_secret: "3PtXWDyDntAtqBqb0FhXin0fmEvtKWq5D0uXC6hCovJG7yK2PJ",
+//   access_token: "1008802026514472965-Pxt7g9MNlGhVpeyQfhUqGWaDoKHA1Z",
+//   access_token_secret: "CryoTvAJvNd19K1sYqqvqxo3N65EfR55c97Onny4lcgS0"
+// };
+
+const bot = new Twit(config);
+
 import {
-  getFollowedMessage,
-  getMotivationMessage,
-  blackListUsers,
-  phraseToLook,
-  getRandom,
-  handleError,
+  getPrediccion
 } from './helpers';
 
-/*
-* INIT THE BOT
-*/
-let T;
-if (process.env.NODE_ENV === 'production') {
-  T = new Twit({
-    consumer_key: process.env.consumer_key,
-    consumer_secret: process.env.consumer_secret,
-    access_token: process.env.access_token,
-    access_token_secret: process.env.access_token_secret,
-  });
-} else {
-  require('dotenv').config();
+console.log('BOT READY...');
 
-  T = new Twit({
-    consumer_key: process.env.consumer_key,
-    consumer_secret: process.env.consumer_secret,
-    access_token: process.env.access_token,
-    access_token_secret: process.env.access_token_secret,
-  });
-}
-
-console.log('Bot is running...');
-
-const sendTweet = async (motivation: boolean) => {
-  const params = {
-    q: phraseToLook,
-    result_type: 'recent',
-    lang: 'en',
-  };
-  console.log(params);
-  let api;
-
-  try {
-    api = await T.get('search/tweets', params);
-  } catch (err) {
-    handleError(err);
-  }
-
-  const randomName: string = getRandom(api.data.statuses).user.screen_name;
-
-  console.log('THE NAME', randomName);
-
-  if (blackListUsers.indexOf(randomName) !== -1 || new RegExp('bot', 'ig').test(randomName)) {
-    console.log('THIS IS A BOT');
-    return;
-  }
-
-  if (motivation) {
-    console.log('MOTIVATION');
-    return tweetIt(getMotivationMessage(randomName));
-  }
-
-  console.log('SUPERCODER');
-  const mess = `@${randomName} is one of the #supercoder of the day. Good work. #100DaysOfCode #301DaysOfCode`;
-  return tweetIt(mess);
+async function tweetIt (txt) {  
+    try {
+      await bot.post('statuses/update', { status: txt });
+      var now = new Date();
+      console.log('TWEET SENT: '+ now.toLocaleTimeString() + '\n' + txt);
+      console.log('------------------');
+    } catch (err) {
+      console.log('ERR: ' + err);
+      console.log('------------------');
+    }
 };
 
-// Send tweet immediately when app start
-sendTweet(true);
-// Send tweet each 30 minutes
-setInterval(() => sendTweet(true), 60000 * 30);
+//setInterval(() => tweetIt(getPrediccion()), 60000 * 120);
+//tweetIt(getPrediccion());
 
-// Tweet about supercoder every 40 minutes
-setInterval(sendTweet, 60000 * 40);
+function log(){
+  console.log(getPrediccion());
+  console.log('------------------');
+}; 
 
-// Take txt and tweet it
-const tweetIt = async txt => {
-  console.log({ txt });
-  console.log('TWEET ON THE WAY');
 
-  try {
-    await T.post('statuses/update', { status: txt });
-    console.log('TWEET SENT');
-  } catch (err) {
-    handleError(err);
-  }
-};
-
-// ===============================
-//          GET A FOLLOWER
-// ===============================
-const botStream = T.stream('user');
-
-const getFollowed = (e: Object) => {
-  console.log('GET A FOLLOWER');
-  // tweet user with the message on follow
-  tweetIt(getFollowedMessage(e.source.screen_name));
-};
-
-botStream.on('follow', getFollowed);
-
-// Connect
-// botStream.on('connect', console.log('CONNECTED'));
-
-// Reconnect
-botStream.on('reconnect', (req, res, connectInterval: number) => {
-  console.log('Reconnect');
-  console.log(req);
-  console.log(res);
-  console.log(connectInterval);
-});
-
-// Limit
-botStream.on('limit', (mess: string) => console.log('Limit', mess));
+setInterval(log, 60000 * 1);
+// console.log(getPrediccion());
+// console.log('------------------');
+// console.log(getPrediccion());
+//now rm MirondoBot --safe --yes && 

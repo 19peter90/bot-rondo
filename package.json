@@ -1,53 +1,33 @@
 {
-  "name": "superheroestwitterbot",
-  "version": "0.1.0",
-  "keywords": [
-    "node",
-    "js",
-    "twitter",
-    "bot",
-    "superheroes",
-    "motivation",
-    "twitter bot"
-  ],
-  "scripts": {
-    "test": "jest",
-    "heroku-prebuild": "echo Start build -----------",
-    "heroku-postbuild": "echo Build done -----",
-    "start": "NODE_ENV=production nodemon index.js",
-    "dev": "NODE_ENV=development nodemon index.js",
-    "restart": "heroku restart -a sleepy-anchorage-85632",
-    "stop": "heroku ps:scale worker=0",
-    "scale": "heroku ps:scale web=0 worker=1",
-    "getenv": "heroku config:get consumer_key consumer_secret access_token access_token_secret -s  >> .env",
-    "lint": "eslint src"
-  },
-  "engines": {
-    "node": "7.x"
-  },
-  "description": "Twitter bot for motivated and inspire people coding in the #100DaysOfCode",
+  "name": "MirondoBot",
+  "version": "1.0.0",
+  "description": "- [x] TweetMotivation Message\r - [x] TweetThankYou Message on follow\r - [ ] TweetOnReply\r - [x] Retweet a user and told him his a superhero",
   "main": "index.js",
-  "repository": "https://github.com/EQuimper/MyOwnChallenge-SuperHeroesTwitterBotCoding",
-  "bugs": "https://github.com/EQuimper/MyOwnChallenge-SuperHeroesTwitterBotCoding/issues",
-  "author": "Emanuel Quimper <quimperemanuel@gmail.com> (http://github.com/EQuimper)",
-  "license": "MIT",
-  "dependencies": {
-    "babel-cli": "^6.24.0",
-    "babel-polyfill": "^6.23.0",
-    "babel-preset-es2015": "^6.24.0",
-    "babel-preset-stage-0": "^6.22.0",
-    "babel-register": "^6.24.0",
-    "cron": "^1.2.1",
-    "dotenv": "^4.0.0",
-    "nodemon": "^1.11.0",
-    "twit": "^2.2.5"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node index.js",
+    "deploy": "now --no-verify -e CONSUMER_KEY=@consumer_key -e CONSUMER_SECRET=@consumer_secret -e ACCESS_TOKEN=@access_token -e ACCESS_TOKEN_SECRET=@access_token_secret"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EQuimper/MyOwnChallenge-SuperHeroesTwitterBotCoding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "babel-jest": "^19.0.0",
+    "babel-eslint": "^8.2.3",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
-    "eslint": "^3.18.0",
-    "eslint-config-equimper": "^1.6.1",
+    "babel-preset-es2017": "^6.24.1",
+    "flow-bin": "^0.42.0"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "flow-bin": "^0.42.0",
-    "jest": "^19.0.2"
+    "twit": "^2.2.10"
   }
 }

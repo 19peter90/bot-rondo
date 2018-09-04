@@ -1,7 +1,4 @@
 /** @flow */
-export * from './getRandom';
-export * from './getFollowedMessage';
-export * from './getMotivationMessage';
-export * from './blackListUsers';
-export * from './phraseToLook';
-export * from './handleError';
+//export * from './getRandom';
+//export * from './Finales';
+export * from './getPrediccion';
