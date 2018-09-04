@@ -6,9 +6,6 @@
   "scripts": {
     "start": "node index.js"
   },
-  "engines": {
-    "node": "4.4.5"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/19peter90/bot-rondo.git"
