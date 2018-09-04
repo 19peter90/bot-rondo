@@ -1,14 +1,13 @@
-// /** @flow */
-import { getRandomFinal, getRandomClave, getRandomForward } from './getRandom';
-import { claves } from './Claves' 
+// // /** @flow */
+const Finales = require('./Finales');
+const Claves = require('./Claves');
 
-
-export const getPrediccion = (): string => {
-  var final = getRandomFinal(),
-      clave1 =  "-" + getRandomClave(claves).replace("*team1*", final.team1).replace("*team2*", final.team2) + "\n",
-      clave2 =  "-" + getRandomClave(claves).replace("*team1*", final.team1).replace("*team2*", final.team2) + "\n",
-      clave3 =  "-" + getRandomClave(claves).replace("*team1*", final.team1).replace("*team2*", final.team2) + "\n",
-      clave4 =  "-" + getRandomClave(claves).replace("*team1*", final.team1).replace("*team2*", final.team2),
+const getPrediccion = () => {
+  var final = Finales.getRandomFinal(),
+      clave1 =  "-" + Claves.getRandomClave().replace("*team1*", final.team1).replace("*team2*", final.team2) + "\n",
+      clave2 =  "-" + Claves.getRandomClave().replace("*team1*", final.team1).replace("*team2*", final.team2) + "\n",
+      clave3 =  "-" + Claves.getRandomClave().replace("*team1*", final.team1).replace("*team2*", final.team2) + "\n",
+      clave4 =  "-" + Claves.getRandomClave().replace("*team1*", final.team1).replace("*team2*", final.team2),
       prediccion = final.text + "\n" + clave1 + clave2 + clave3 + clave4;
 
   if (prediccion.length > 280){
@@ -48,3 +47,5 @@ var getClaveMasCorta = function(clave1, clave2, clave3, clave4) {
 
       return claveToRemove;
   };
+
+module.exports = getPrediccion;

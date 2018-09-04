@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel-node index.js",
+    "start": "node index.js",
     "deploy": "now --no-verify -e CONSUMER_KEY=@consumer_key -e CONSUMER_SECRET=@consumer_secret -e ACCESS_TOKEN=@access_token -e ACCESS_TOKEN_SECRET=@access_token_secret"
   },
   "repository": {

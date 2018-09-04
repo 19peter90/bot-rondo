@@ -1,6 +1,5 @@
-import { Jugador } from '../types/Data';
-
-export const medios: Array<Jugador> = [
+exports.getRandomMid = function(){
+    var medios = [
        {
            text: 'De Bruyne'
        },
@@ -73,4 +72,6 @@ export const medios: Array<Jugador> = [
        {
            text: 'Fellaini'
        }
-]
+];
+  return   medios[Math.floor(Math.random() * medios.length)].text;
+};

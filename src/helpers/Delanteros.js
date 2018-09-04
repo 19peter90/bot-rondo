@@ -1,6 +1,6 @@
-import { Jugador } from '../types/Data';
 
-export const delanteros: Array<Jugador> = [
+exports.getRandomForward = function() {
+    var delanteros = [
     {
         text: 'Agüero'
     },
@@ -133,4 +133,12 @@ export const delanteros: Array<Jugador> = [
     {
         text: 'Di María'
     }
-]
+];
+
+  return   delanteros[Math.floor(Math.random() * delanteros.length)].text;
+};
+
+
+
+
+

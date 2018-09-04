@@ -1,6 +1,5 @@
-import { Final } from '../types/Data';
-
-export const finales: Array<Final> = [
+exports.getRandomFinal = function(){
+  var finales = [
   {
     text: 'Final en Old Trafford. #ManUnited 3-0 #Stoke.',
     team1: '#ManUnited',
@@ -510,5 +509,7 @@ export const finales: Array<Final> = [
     text: 'Final en Kaliningrado. #España 2-2 #Marruecos',
     team1: '#España',
     team2: '#Marruecos'
-  }
-];
+  }];
+
+  return finales[Math.floor(Math.random() * finales.length)];
+}
