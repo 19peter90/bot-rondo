@@ -19,8 +19,8 @@ function tweetIt (txt) {
     }
 };
 
-//setInterval(() => tweetIt(getPrediccion()), 60000 * 120);
-tweetIt(getPrediccion());
+setInterval(() => tweetIt(getPrediccion()), 60000 * 120);
+//tweetIt(getPrediccion());
 
 // function log(){
 //   console.log(getPrediccion());
