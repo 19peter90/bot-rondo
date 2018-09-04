@@ -20,15 +20,15 @@ function tweetIt (txt) {
 };
 
 //setInterval(() => tweetIt(getPrediccion()), 60000 * 120);
-//tweetIt(getPrediccion());
+tweetIt(getPrediccion());
 
-function log(){
-  console.log(getPrediccion());
-  console.log('------------------');
-}; 
+// function log(){
+//   console.log(getPrediccion());
+//   console.log('------------------');
+// }; 
 
 
-setInterval(log, 2000 * 1);
+// setInterval(log, 2000 * 1);
 // console.log(getPrediccion());
 // console.log('------------------');
 // console.log(getPrediccion());
