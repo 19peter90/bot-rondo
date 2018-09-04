@@ -1,7 +1,7 @@
 {
   "name": "MirondoBot",
   "version": "1.0.0",
-  "description": "- [x] TweetMotivation Message\r - [x] TweetThankYou Message on follow\r - [ ] TweetOnReply\r - [x] Retweet a user and told him his a superhero",
+  "description": "Mirondo Bot",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
