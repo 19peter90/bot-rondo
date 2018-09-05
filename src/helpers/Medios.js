@@ -1,4 +1,4 @@
-exports.getRandomMid = function(){
+exports.getRandom = function(){
     var medios = [
        {
            text: 'De Bruyne'
@@ -71,6 +71,12 @@ exports.getRandomMid = function(){
        },
        {
            text: 'Fellaini'
+       },
+       {
+           text: 'Jorginho'
+       },
+       {
+           text: 'Keita'
        }
 ];
   return   medios[Math.floor(Math.random() * medios.length)].text;

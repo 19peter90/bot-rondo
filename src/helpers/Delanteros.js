@@ -1,5 +1,5 @@
 
-exports.getRandomForward = function() {
+exports.getRandom = function() {
     var delanteros = [
     {
         text: 'Agüero'

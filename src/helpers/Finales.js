@@ -509,6 +509,21 @@ exports.getRandomFinal = function(){
     text: 'Final en Kaliningrado. #España 2-2 #Marruecos',
     team1: '#España',
     team2: '#Marruecos'
+  },
+  {
+    text: 'Final en Londres. #Chelsea 2-0 #Bournemouth',
+    team1: '#Chelsea',
+    team2: '#Bournemouth'
+  },
+  {
+    text: 'Final en Watford. #Watford 2-1 #CrystalPalace',
+    team1: '#Watford',
+    team2: '#CrystalPalace'
+  },
+  {
+    text: 'Final en Anfield. #Liverpool 1-0 #Brighton',
+    team1: '#Liverpool',
+    team2: '#Brighton'
   }];
 
   return finales[Math.floor(Math.random() * finales.length)];

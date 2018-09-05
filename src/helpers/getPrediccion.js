@@ -4,10 +4,10 @@ const Claves = require('./Claves');
 
 const getPrediccion = () => {
   var final = Finales.getRandomFinal(),
-      clave1 =  "-" + Claves.getRandomClave().replace("*team1*", final.team1).replace("*team2*", final.team2) + "\n",
-      clave2 =  "-" + Claves.getRandomClave().replace("*team1*", final.team1).replace("*team2*", final.team2) + "\n",
-      clave3 =  "-" + Claves.getRandomClave().replace("*team1*", final.team1).replace("*team2*", final.team2) + "\n",
-      clave4 =  "-" + Claves.getRandomClave().replace("*team1*", final.team1).replace("*team2*", final.team2),
+      clave1 =  "-" + Claves.getRandom().replace("*team1*", final.team1).replace("*team2*", final.team2) + "\n",
+      clave2 =  "-" + Claves.getRandom().replace("*team1*", final.team1).replace("*team2*", final.team2) + "\n",
+      clave3 =  "-" + Claves.getRandom().replace("*team1*", final.team1).replace("*team2*", final.team2) + "\n",
+      clave4 =  "-" + Claves.getRandom().replace("*team1*", final.team1).replace("*team2*", final.team2),
       prediccion = final.text + "\n" + clave1 + clave2 + clave3 + clave4;
 
   if (prediccion.length > 280){
