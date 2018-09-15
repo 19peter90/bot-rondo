@@ -77,6 +77,9 @@ exports.getRandom = function(){
        },
        {
            text: 'Keita'
+       },
+       {
+           text: 'Fabinho'
        }
 ];
   return   medios[Math.floor(Math.random() * medios.length)].text;

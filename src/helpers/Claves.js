@@ -4,10 +4,10 @@ const Delanteros = require('./Delanteros');
 exports.getRandom = function(){
     var claves = [
     {
-        text: ''+ Medios.getRandom() + ' con confianza es un show.'
+        text: Medios.getRandom() + ' con confianza es un show.'
     },
     {
-        text:  ''+ Delanteros.getRandom() + ' sigue a lo suyo, en silencio. Gran rendimiento.'
+        text: Delanteros.getRandom() + ' sigue a lo suyo, en silencio. Gran rendimiento.'
     },
     {
         text: 'Tiene trabajo Paul Lambert (firmó hoy) en *team2*.'
@@ -25,7 +25,7 @@ exports.getRandom = function(){
         text: 'Interesante ver al joven Zinchenko en banda izquierda en *team1*.'
     },
     {
-        text: '' + Delanteros.getRandom() + '. El mejor delantero del momento.'
+        text: Delanteros.getRandom() + '. El mejor delantero del momento.'
     },
     {
         text: 'Parece, Pellegrino salva el puesto una semana más.'
@@ -37,7 +37,7 @@ exports.getRandom = function(){
         text: 'Los Reds no estuvieron fluidos. Sólo al final apretaron, fruto de la exigencia, más allá de ideas claras.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' lleva unas jornadas "light".'
+        text: Delanteros.getRandom() + ' lleva unas jornadas "light".'
     },
     {
         text: 'Mereció bastante más *team1*.'
@@ -46,13 +46,13 @@ exports.getRandom = function(){
         text: '*team2* sigue inmerso en racha gris: 2 victorias en 17 jornadas'
     },
     {
-        text: '' + Delanteros.getRandom() + ', vital en *team1*. Estandarte.'
+        text: Delanteros.getRandom() + ', vital en *team1*. Estandarte.'
     },
     {
         text: 'Sigue preocupando la sequía de ' + Delanteros.getRandom() + '.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' es escandaloso. Temporadón.'
+        text: Delanteros.getRandom() + ' es escandaloso. Temporadón.'
     },
     {
         text: 'Hubo polémica al final, pero resultado justo viendo el partido.'
@@ -61,7 +61,7 @@ exports.getRandom = function(){
         text: 'Partidazo de ' + Delanteros.getRandom() + '.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' alcanza los 100 goles ligueros con el *team2*.'
+        text: Delanteros.getRandom() + ' alcanza los 100 goles ligueros con el *team2*.'
     },
     {
         text: 'Sólo una victoria de *team2* en las últimas 5 jornadas.'
@@ -79,10 +79,10 @@ exports.getRandom = function(){
         text: '*team2* a 6 puntos de #UCL.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' es escandaloso.'
+        text: Delanteros.getRandom() + ' es escandaloso.'
     },
     {
-        text: '' + Delanteros.getRandom() + ', sin espacios, desaparecido.'
+        text: Delanteros.getRandom() + ', sin espacios, desaparecido.'
     },
     {
         text: 'Gran partido de ' + Medios.getRandom() + '.'
@@ -133,10 +133,10 @@ exports.getRandom = function(){
         text: 'PARTIDAZO cumpliendo las expectativas.'
     },
     {
-        text: '' + Delanteros.getRandom() + ', una noche más, una vez más.'
+        text: Delanteros.getRandom() + ', una noche más, una vez más.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' es un jugadorazo infravalorado.'
+        text: Delanteros.getRandom() + ' es un jugadorazo infravalorado.'
     },
     {
         text: 'Recital de los de Jurgen Klopp.'
@@ -145,7 +145,7 @@ exports.getRandom = function(){
         text: 'Eliminatoria prácticamente sentenciada.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' está firmando una temporada extraordinaria.'
+        text: Delanteros.getRandom() + ' está firmando una temporada extraordinaria.'
     },
     {
         text: 'La calidad individual de *team1* marcó la diferencia.'
@@ -154,7 +154,7 @@ exports.getRandom = function(){
         text: 'La entrada de ' + Delanteros.getRandom() + ', clave.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' y la #UCL, una historia que parece infinita.'
+        text: Delanteros.getRandom() + ' y la #UCL, una historia que parece infinita.'
     },
     {
         text: 'Excesivo castigo para un buen *team2*, sobre todo en el 2º tiempo.'
@@ -163,7 +163,7 @@ exports.getRandom = function(){
         text: 'Un primer tiempo fantástico del *team1* fue suficiente.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' puso la magia.'
+        text: Delanteros.getRandom() + ' puso la magia.'
     },
     {
         text: 'Gran partido del joven (17 años) Ampadu, quien fue titular.'
@@ -178,10 +178,10 @@ exports.getRandom = function(){
         text: 'Fue superior el *team2*, pese a jugar con 10 desde antes del descanso.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' aprovechó un grave error defensivo para tumbar al líder de la #EPL.'
+        text: Delanteros.getRandom() + ' aprovechó un grave error defensivo para tumbar al líder de la #EPL.'
     },
     {
-        text: '' + Medios.getRandom() + ' salió en la segunda parte, pero no fue suficiente.'
+        text: Medios.getRandom() + ' salió en la segunda parte, pero no fue suficiente.'
     },
     {
         text: 'PARTIDAZO de ' + Delanteros.getRandom() + '.'
@@ -223,7 +223,7 @@ exports.getRandom = function(){
         text: 'Los de Klopp siguen confirmándose como uno de los clubes más goleadores del continente.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' al rescate sobre la bocina.'
+        text: Delanteros.getRandom() + ' al rescate sobre la bocina.'
     },
     {
         text: 'Los de Pochettino lo merecieron, sobre todo en la 2ª mitad.'
@@ -265,7 +265,7 @@ exports.getRandom = function(){
         text: 'Muy poquito de *team2*.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' sigue maravillando.'
+        text: Delanteros.getRandom() + ' sigue maravillando.'
     },
     {
         text: 'Poco trabajo para Karius, en líneas generales.'
@@ -289,7 +289,7 @@ exports.getRandom = function(){
         text: 'De nuevo, Conte llegando tarde con los cambios.'
     },
     {
-        text: '' + Medios.getRandom() + ' clave en el momento importante.'
+        text: Medios.getRandom() + ' clave en el momento importante.'
     },
     {
         text: '*team2*, a 5 puntos de #UCL.'
@@ -313,7 +313,7 @@ exports.getRandom = function(){
         text: 'Partido trámite tras la goleada de la Ida. Pues eso.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' y la #UCL. Una historia con spoiler eterno.'
+        text: Delanteros.getRandom() + ' y la #UCL. Una historia con spoiler eterno.'
     },
     {
         text: 'Quiso el *team1* en el primer tiempo, pero no obtuvo premio alguno.'
@@ -334,13 +334,13 @@ exports.getRandom = function(){
         text: 'Eliminatoria ESPECTACULAR.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' es TOP. Volvió loco a Barzagli.'
+        text: Delanteros.getRandom() + ' es TOP. Volvió loco a Barzagli.'
     },
     {
         text: '*team2* no se derrumbó y en 3 minutos de locura consiguió el pase.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' apareció, una vez más.'
+        text: Delanteros.getRandom() + ' apareció, una vez más.'
     },
     {
         text: 'La tuvo ' + Delanteros.getRandom() + ' en el 89 para la prórroga.'
@@ -352,7 +352,7 @@ exports.getRandom = function(){
         text: 'Mejoró *team2* en 2ª parte, pero sin premio.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' sigue sin aparecer esta temporada.'
+        text: Delanteros.getRandom() + ' sigue sin aparecer esta temporada.'
     },
     {
         text: 'Perdonó *team1* y sufrió un poco al final.'
@@ -364,7 +364,7 @@ exports.getRandom = function(){
         text: 'Salió ' + Delanteros.getRandom() + ' en la 2ª mitad y mejoró *team2*. Nada nuevo.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' firmando un 2018 TOP.'
+        text: Delanteros.getRandom() + ' firmando un 2018 TOP.'
     },
     {
         text: 'Partido más igualado que lo que refleja el resultado.'
@@ -385,7 +385,7 @@ exports.getRandom = function(){
         text: 'Clasificado *team1* con global de 2-2.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' es un delantero maravilloso. Su gol da la clasificación a los suyos.'
+        text: Delanteros.getRandom() + ' es un delantero maravilloso. Su gol da la clasificación a los suyos.'
     },
     {
         text: 'Héroe ' + Delanteros.getRandom() + '.'
@@ -514,7 +514,7 @@ exports.getRandom = function(){
         text: 'Partidazo de ' + Delanteros.getRandom() + '.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' es descomunal.'
+        text: Delanteros.getRandom() + ' es descomunal.'
     },
     {
         text: 'La eliminatoria de ' + Delanteros.getRandom() + '.'
@@ -532,7 +532,7 @@ exports.getRandom = function(){
         text: 'Dignísimo partido de *team2*. '
     },
     {
-        text: '' + Delanteros.getRandom() + ', de penalti, rescató al campeón de Europa.'
+        text: Delanteros.getRandom() + ', de penalti, rescató al campeón de Europa.'
     },
     {
         text: 'Buffon fue expulsado en el descuento.'
@@ -553,7 +553,7 @@ exports.getRandom = function(){
         text: 'Mereció más *team1*.'
     },
     {
-        text: '' + Delanteros.getRandom() + ', a lo suyo. 31 goles del egipcio.'
+        text: Delanteros.getRandom() + ', a lo suyo. 31 goles del egipcio.'
     },
     {
         text: 'Desaparecido ' + Delanteros.getRandom() + '.'
@@ -568,13 +568,13 @@ exports.getRandom = function(){
         text: 'Por surrealista que suene, *team2* sueña.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' es MARAVILLOSO.'
+        text: Delanteros.getRandom() + ' es MARAVILLOSO.'
     },
     {
         text: 'Partidazo de ' + Medios.getRandom() + '.'
     },
     {
-        text: '' + Delanteros.getRandom() + ', show en la sombra.'
+        text: Delanteros.getRandom() + ', show en la sombra.'
     },
     {
         text: 'Cambio de guión sin ' + Delanteros.getRandom() + '.'
@@ -592,7 +592,7 @@ exports.getRandom = function(){
         text: 'Volvió a aparecer ' + Delanteros.getRandom() + ' en una eliminatoria continental.'
     },
     {
-        text: '' + Delanteros.getRandom() + ', el comodín de Zidane.'
+        text: Delanteros.getRandom() + ', el comodín de Zidane.'
     },
     {
         text: 'No ' + Delanteros.getRandom() + ', no party.'
@@ -604,7 +604,7 @@ exports.getRandom = function(){
         text: '*team1* suma 102 goles a favor, con 3 jornadas por disputar. Pinta a récord. Con 1, igualan. Con 2, superan.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' sigue haciendo, en silencio, un trabajo excepcional.'
+        text: Delanteros.getRandom() + ' sigue haciendo, en silencio, un trabajo excepcional.'
     },
     {
         text: 'Colosal partido de Sergio Ramos.'
@@ -613,10 +613,10 @@ exports.getRandom = function(){
         text: 'Digna eliminatoria de ' + Delanteros.getRandom() + ' de lateral.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' está infravaloradisimo.'
+        text: Delanteros.getRandom() + ' está infravaloradisimo.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' demostrando que su temporadón no es casualidad.'
+        text: Delanteros.getRandom() + ' demostrando que su temporadón no es casualidad.'
     },
     {
         text: 'Eliminatoria muy digna de *team1*.'
@@ -646,7 +646,7 @@ exports.getRandom = function(){
         text: 'El rendimiento de ' + Delanteros.getRandom() + ' sigue dando puntos al *team1*.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' es espectacular.'
+        text: Delanteros.getRandom() + ' es espectacular.'
     },
     {
         text: 'Primer tiempo para *team1*. Mejoró *team2* en la 2ª mitad.'
@@ -673,7 +673,7 @@ exports.getRandom = function(){
         text: 'Conociendo sus limitaciones, ordenado *team2*, cerrando muy bien espacios.'
     },
     {
-        text: '' + Delanteros.getRandom() + '.'
+        text: Delanteros.getRandom() + '.'
     },
     {
         text: '*team1* sobrevivió por un jugador extraordinario. Pegada pura.'
@@ -682,7 +682,7 @@ exports.getRandom = function(){
         text: 'No tuvo su noche De Gea.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' brilló para rescatar a los suyos.'
+        text: Delanteros.getRandom() + ' brilló para rescatar a los suyos.'
     },
     {
         text: 'Demasiado premio para *team1*.'
@@ -694,7 +694,7 @@ exports.getRandom = function(){
         text: 'Aguantó perfecto *team2* en bloque. Pocos espacios.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' la tuvo de penalti.'
+        text: Delanteros.getRandom() + ' la tuvo de penalti.'
     },
     {
         text: 'El bloque de *team2* sigue intacto.'
@@ -760,7 +760,7 @@ exports.getRandom = function(){
         text: 'Partido muy errático de *team1*. Demasiado. Lo pagó caro.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' volvió a ser determinante.'
+        text: Delanteros.getRandom() + ' volvió a ser determinante.'
     },
     {
         text: 'Mereció mucho más *team2*, pero no obtuvo premio alguno.'
@@ -775,7 +775,7 @@ exports.getRandom = function(){
         text: 'Vienen curvas en el partido de vuelta.'
     },
     {
-        text: '' + Delanteros.getRandom() + '. Ladies and gentlemen.'
+        text: Delanteros.getRandom() + '. Ladies and gentlemen.'
     },
     {
         text: '¿Por qué los jugadores protestan decisiones del VAR?'
@@ -784,10 +784,10 @@ exports.getRandom = function(){
         text: '*team2* acumula muchas figuras mediáticas, pero no son un bloque.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' se impone al ruido mediático.'
+        text: Delanteros.getRandom() + ' se impone al ruido mediático.'
     },
     {
-        text: '' + Delanteros.getRandom() + ' buen partido, insisto, desde las sombras.'
+        text: Delanteros.getRandom() + ' buen partido, insisto, desde las sombras.'
     },
     {
         text: 'OFICIAL. *team1*, campeón.'
@@ -799,7 +799,7 @@ exports.getRandom = function(){
         text: '¿Está haciendo *team1* el campeonato perfecto? Seguramente no a nivel estadístico.'
     },
     {
-        text: '' + Delanteros.getRandom() + '. Please, don\'t go this summer.'
+        text: Delanteros.getRandom() + '. Please, don\'t go this summer.'
     },
     {
         text: '*team1* ganó cómoda por el resultado, pero no por sensaciones.'
@@ -899,6 +899,21 @@ exports.getRandom = function(){
     },
     {
         text: '*team2* mejor en la 1ª mitad. Se igualó todo en la 2ª.'
+    },
+    {
+        text: '*team2* sigue invicto. 15/15 puntos.'
+    },
+    {
+        text: 'Faltó juego exterior (sobre todo ' + Medios.getRandom() +') en *team1*.'
+    },
+    {
+        text: 'Lo de ' + Medios.getRandom() + ' sin minutos empieza a ser un poco raro.'
+    },
+    {
+        text: Delanteros.getRandom() + ', el silencioso.'
+    },
+    {
+        text: 'Cómo me recuerda ' + Medios.getRandom() + ' a Beckham en el balón parado.'
     }
     ];
     
