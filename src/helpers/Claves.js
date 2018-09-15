@@ -914,6 +914,18 @@ exports.getRandom = function(){
     },
     {
         text: 'Cómo me recuerda ' + Medios.getRandom() + ' a Beckham en el balón parado.'
+    },
+    {
+        text: 'Imbatido *team1*. 15/15 puntos.'
+    },
+    {
+        text: '¿Peligra Benítez?'
+    },
+    {
+        text: 'Doblete de ' + Delanteros.getRandom() + ' desde el silencio mediático.'
+    },
+    {
+        text: 'Volvió ' + Delanteros.getRandom() + '. Sonríe *team1*.'
     }
     ];
     

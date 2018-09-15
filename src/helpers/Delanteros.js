@@ -132,6 +132,9 @@ exports.getRandom = function() {
     },
     {
         text: 'Di María'
+    },
+    {
+        text: 'Fraser'
     }
 ];
 
