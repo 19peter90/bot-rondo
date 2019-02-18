@@ -80,6 +80,9 @@ exports.getRandom = function(){
        },
        {
            text: 'Fabinho'
+       },
+       {
+           text: 'Asensio'
        }
 ];
   return   medios[Math.floor(Math.random() * medios.length)].text;

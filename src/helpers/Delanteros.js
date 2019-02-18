@@ -135,6 +135,9 @@ exports.getRandom = function() {
     },
     {
         text: 'Fraser'
+    },
+    {
+        text: 'Adrián'
     }
 ];
 

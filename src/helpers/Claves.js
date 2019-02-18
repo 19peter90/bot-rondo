@@ -926,6 +926,45 @@ exports.getRandom = function(){
     },
     {
         text: 'Volvió ' + Delanteros.getRandom() + '. Sonríe *team1*.'
+    },
+    {
+        text: 'Protagonista ' + Medios.getRandom() + ': gol y asistencia.'
+    },
+    {
+        text: 'Sarri, una vez más, con cambios estériles.'
+    },
+    {
+        text: 'Protagonista el VAR.'
+    },
+    {
+        text: 'Partido más incómodo de lo esperado para los de Solari.'
+    },
+    {
+        text: Delanteros.getRandom() + ', el delantero silencioso.'
+    },
+    {
+        text: 'Gol importante para ' + Medios.getRandom() + '. Tanto por lo colectivo como por lo personal.'
+    },
+    {
+        text: 'Marcó ' + Delanteros.getRandom() + '. One more time.'
+    },
+    {
+        text: 'Segunda mitad fabulosa del *team1*.'
+    },
+    {
+        text: 'Primera derrota de *team1* desde la llegada de Solskjaer.'
+    },
+    {
+        text: 'Doble asistencia de ' + Delanteros.getRandom() + ', vital.'
+    },
+    {
+        text: 'Apareció otra vez el genio ' + Delanteros.getRandom() + ' en eliminatoria europea.'
+    },
+    {
+        text: 'El gol del ' + Delanteros.getRandom() + ' mete al *team2* en la eliminatoria.'
+    },
+    {
+        text: 'Primer golpe de *team1* en la eliminatoria.'
     }
     ];
     
