@@ -1,5 +1,6 @@
 const Medios = require('./Medios');
 const Delanteros = require('./Delanteros');
+const Managers = require('./Managers');
 
 exports.getRandom = function(){
     var claves = [
@@ -10,7 +11,7 @@ exports.getRandom = function(){
         text: Delanteros.getRandom() + ' sigue a lo suyo, en silencio. Gran rendimiento.'
     },
     {
-        text: 'Tiene trabajo Paul Lambert (firmó hoy) en *team2*.'
+        text: 'Tiene trabajo ' + Managers.getRandom() +' (firmó hoy) en *team2*.'
     },
     {
         text: 'Partido muy bonito, ritmo alto, de una portería a otra.'
@@ -28,7 +29,7 @@ exports.getRandom = function(){
         text: Delanteros.getRandom() + '. El mejor delantero del momento.'
     },
     {
-        text: 'Parece, Pellegrino salva el puesto una semana más.'
+        text: 'Parece, ' + Managers.getRandom() + ' salva el puesto una semana más.'
     },
     {
         text: 'Debutó Obafemi, de sólo 17 años.'
@@ -91,7 +92,7 @@ exports.getRandom = function(){
         text: 'Petr Cech evitando goleada de *team1*.'
     },
     {
-        text: 'Triunfo vital para los de Benítez de cara a la permanencia.'
+        text: 'Triunfo vital para los de ' + Managers.getRandom() + ' de cara a la permanencia.'
     },
     {
         text: '2 derrotas de *team2* en 3 jornadas.'
@@ -115,7 +116,7 @@ exports.getRandom = function(){
         text: '¿Cómo afectará la vuelta de #UCL al *team2*?'
     },
     {
-        text: 'Hizo acto de prensencia el rodillo de los de Guardiola.'
+        text: 'Hizo acto de prensencia el rodillo de los de ' + Managers.getRandom() + '.'
     },
     {
         text: 'Eliminatoria casi sentenciada.'
@@ -139,7 +140,7 @@ exports.getRandom = function(){
         text: Delanteros.getRandom() + ' es un jugadorazo infravalorado.'
     },
     {
-        text: 'Recital de los de Jurgen Klopp.'
+        text: 'Recital de los de ' + Managers.getRandom() + '.'
     },
     {
         text: 'Eliminatoria prácticamente sentenciada.'
@@ -220,13 +221,13 @@ exports.getRandom = function(){
         text: 'El tridente ' + Delanteros.getRandom() +'-' + Delanteros.getRandom() + '-' + Delanteros.getRandom() + ' sigue a lo suyo.'
     },
     {
-        text: 'Los de Klopp siguen confirmándose como uno de los clubes más goleadores del continente.'
+        text: 'Los de ' + Managers.getRandom() + ' siguen confirmándose como uno de los clubes más goleadores del continente.'
     },
     {
         text: Delanteros.getRandom() + ' al rescate sobre la bocina.'
     },
     {
-        text: 'Los de Pochettino lo merecieron, sobre todo en la 2ª mitad.'
+        text: 'Los de ' + Managers.getRandom() + ' lo merecieron, sobre todo en la 2ª mitad.'
     },
     {
         text: '*team1* tienen un calendario MUY difícil. Mala pinta.'
@@ -244,7 +245,7 @@ exports.getRandom = function(){
         text: '*team2*, fuera de puestos #UCL.'
     },
     {
-        text: 'Los de Guardiola finiquitaron el partido a la media hora.'
+        text: 'Los de ' + Managers.getRandom() + ' finiquitaron el partido a la media hora.'
     },
     {
         text: '\'Sobró\' el segundo tiempo.'
@@ -322,7 +323,7 @@ exports.getRandom = function(){
         text: 'Gran partido de ' + Delanteros.getRandom() + '.'
     },
     {
-        text: 'Trámite superado para los de Guardiola. Están dentro.'
+        text: 'Trámite superado para los de ' + Managers.getRandom() + '. Están dentro.'
     },
     {
         text: 'El *team2*, pese a sus pocas opciones, dio la cara.'
@@ -421,10 +422,10 @@ exports.getRandom = function(){
         text: '*team2* jugará las Semifinales de #FACup en Wembley.'
     },
     {
-        text: 'Superiores los de Pochettino.'
+        text: 'Superiores los de ' + Managers.getRandom() + '.'
     },
     {
-        text: 'Qué bueno es Eriksen.'
+        text: 'Qué bueno es ' + Medios.getRandom() + '.'
     },
     {
         text: 'Eliminación "positiva" para el *team1* peleando por no descender.'
@@ -433,7 +434,7 @@ exports.getRandom = function(){
         text: 'El *team1* jugará las Semifinales de la #FACup.'
     },
     {
-        text: 'Por algo Mourinho se va al fin del mundo con ' + Medios.getRandom() + '. Jugadorazo.'
+        text: 'Por algo ' + Managers.getRandom() + ' se va al fin del mundo con ' + Medios.getRandom() + '. Jugadorazo.'
     },
     {
         text: 'Empieza a coger ritmo de nuevo ' + Delanteros.getRandom() + ', poco a poco.'
@@ -490,10 +491,10 @@ exports.getRandom = function(){
         text: 'Quiso mejorar *team2* en el tramo final, pero sin premio.'
     },
     {
-        text: 'Noche mágica para los de Klopp.'
+        text: 'Noche mágica para los de ' + Managers.getRandom() + '.'
     },
     {
-        text: 'Le salieron "bien" las rotaciones a Klopp pensando en la #UCL.'
+        text: 'Le salieron "bien" las rotaciones a ' + Managers.getRandom() + ' pensando en la #UCL.'
     },
     {
         text: '*team1* firmó un final de partido muy bueno.'
@@ -544,7 +545,7 @@ exports.getRandom = function(){
         text: 'Where is ' + Delanteros.getRandom() + '? Un gol en 2018.'
     },
     {
-        text: 'Suma y sigue el *team1* de Rafa Benítez.'
+        text: 'Suma y sigue el *team1* de ' + Managers.getRandom() + '.'
     },
     {
         text: 'El colista se llevó los 3 puntos en casa del 2º.'
@@ -592,7 +593,7 @@ exports.getRandom = function(){
         text: 'Volvió a aparecer ' + Delanteros.getRandom() + ' en una eliminatoria continental.'
     },
     {
-        text: Delanteros.getRandom() + ', el comodín de Zidane.'
+        text: Delanteros.getRandom() + ', el comodín de ' + Managers.getRandom() + '.'
     },
     {
         text: 'No ' + Delanteros.getRandom() + ', no party.'
@@ -628,7 +629,7 @@ exports.getRandom = function(){
         text: '*team1*, matemáticamente, descendido.'
     },
     {
-        text: 'El final de temporada del *team2* con Roy Hodgson es bárbaro.'
+        text: 'El final de temporada del *team2* con ' + Managers.getRandom() + ' es bárbaro.'
     },
     {
         text: 'Sigue la estadística positiva del *team2* con ' + Delanteros.getRandom() + '.'
@@ -919,7 +920,7 @@ exports.getRandom = function(){
         text: 'Imbatido *team1*. 15/15 puntos.'
     },
     {
-        text: '¿Peligra Benítez?'
+        text: '¿Peligra ' + Managers.getRandom() + '?'
     },
     {
         text: 'Doblete de ' + Delanteros.getRandom() + ' desde el silencio mediático.'
@@ -931,13 +932,13 @@ exports.getRandom = function(){
         text: 'Protagonista ' + Medios.getRandom() + ': gol y asistencia.'
     },
     {
-        text: 'Sarri, una vez más, con cambios estériles.'
+        text: Managers.getRandom() + ', una vez más, con cambios estériles.'
     },
     {
         text: 'Protagonista el VAR.'
     },
     {
-        text: 'Partido más incómodo de lo esperado para los de Solari.'
+        text: 'Partido más incómodo de lo esperado para los de ' + Managers.getRandom() + '.'
     },
     {
         text: Delanteros.getRandom() + ', el delantero silencioso.'
@@ -952,7 +953,7 @@ exports.getRandom = function(){
         text: 'Segunda mitad fabulosa del *team1*.'
     },
     {
-        text: 'Primera derrota de *team1* desde la llegada de Solskjaer.'
+        text: 'Primera derrota de *team1* desde la llegada de ' + Managers.getRandom() +'.'
     },
     {
         text: 'Doble asistencia de ' + Delanteros.getRandom() + ', vital.'
