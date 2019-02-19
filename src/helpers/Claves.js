@@ -1,3 +1,4 @@
+const Porteros = require('./Porteros');
 const Medios = require('./Medios');
 const Delanteros = require('./Delanteros');
 const Managers = require('./Managers');
@@ -89,7 +90,7 @@ exports.getRandom = function(){
         text: 'Gran partido de ' + Medios.getRandom() + '.'
     },
     {
-        text: 'Petr Cech evitando goleada de *team1*.'
+        text: Porteros.getRandom() + ' evitando goleada de *team1*.'
     },
     {
         text: 'Triunfo vital para los de ' + Managers.getRandom() + ' de cara a la permanencia.'
@@ -188,7 +189,7 @@ exports.getRandom = function(){
         text: 'PARTIDAZO de ' + Delanteros.getRandom() + '.'
     },
     {
-        text: 'Dominó más la posesión el *team2*, pero sin peligro para Courtois.'
+        text: 'Dominó más la posesión el *team2*, pero sin peligro para ' + Porteros.getRandom() + '.'
     },
     {
         text: 'Perdonó el *team1*, pero el que nunca perdona se llama ' + Delanteros.getRandom() + '.'
@@ -269,13 +270,13 @@ exports.getRandom = function(){
         text: Delanteros.getRandom() + ' sigue maravillando.'
     },
     {
-        text: 'Poco trabajo para Karius, en líneas generales.'
+        text: 'Poco trabajo para ' + Porteros.getRandom() + ', en líneas generales.'
     },
     {
         text: 'Este *team2* no tiene rumbo claro en liga.'
     },
     {
-        text: 'Volvió el #WengerOUT a la grada.'
+        text: 'Volvió el #' + Managers.getRandom() +'OUT a la grada.'
     },
     {
         text: '*team1* coge oxígeno y respira en la tabla.'
@@ -284,10 +285,10 @@ exports.getRandom = function(){
         text: '*team2* YA está a 13 puntos de #UCL.'
     },
     {
-        text: 'Nulo de ideas *team2*. Ederson, espectador de lujo.'
+        text: 'Nulo de ideas *team2*. ' + Porteros.getRandom() + ', espectador de lujo.'
     },
     {
-        text: 'De nuevo, Conte llegando tarde con los cambios.'
+        text: 'De nuevo, ' + Managers.getRandom() + ' llegando tarde con los cambios.'
     },
     {
         text: Medios.getRandom() + ' clave en el momento importante.'
@@ -308,7 +309,7 @@ exports.getRandom = function(){
         text: '*team1*, antepenúltimo.'
     },
     {
-        text: '¿Ha sido el último partido de Iker Casillas en #UCL?'
+        text: '¿Ha sido el último partido de ' + Porteros.getRandom() + ' en #UCL?'
     },
     {
         text: 'Partido trámite tras la goleada de la Ida. Pues eso.'
@@ -371,7 +372,7 @@ exports.getRandom = function(){
         text: 'Partido más igualado que lo que refleja el resultado.'
     },
     {
-        text: 'Cech alcanza los 200 partidos con portería a 0 en su carrera.'
+        text: Porteros.getRandom() + ' alcanza los 200 partidos con portería a 0 en su carrera.'
     },
     {
         text: 'El momento de forma de ' + Delanteros.getRandom() + ' es extraordinario.'
@@ -413,7 +414,7 @@ exports.getRandom = function(){
         text: '*team2* ha estado mejor de lo que decían las expectativas en la eliminatoria.'
     },
     {
-        text: 'Partido flojo de Courtois.'
+        text: 'Partido flojo de ' + Porteros.getRandom() + '.'
     },
     {
         text: 'Gol importante para ' + Delanteros.getRandom() + '.'
@@ -446,7 +447,7 @@ exports.getRandom = function(){
         text: 'Partido gris, en líneas generales, que para nada reflejó un marcador así.'
     },
     {
-        text: 'Partidazo de Butland. Porterazo.'
+        text: 'Partidazo de ' + Porteros.getRandom() + '. Porterazo.'
     },
     {
         text: 'El *team1* dice prácticamente \'adiós\' a la #UCL para la próxima temporada.'
@@ -467,7 +468,7 @@ exports.getRandom = function(){
         text: 'Golpe de autoridad total del *team2*.'
     },
     {
-        text: 'Nueva temporada sin premio para Buffon.'
+        text: 'Nueva temporada sin premio para ' + Porteros.getRandom() + '.'
     },
     {
         text: 'Con 0·0 Sarabia tuvo un ocasión clarísima y de forma surrealista la mandó fuera.'
@@ -509,7 +510,7 @@ exports.getRandom = function(){
         text: '*team2* sigue opositando al descenso.'
     },
     {
-        text: '5 de los 6 goles de Aubameyang como jugador del *team1* han sido en casa.'
+        text: '5 de los 6 goles de ' + Delanteros.getRandom() + ' como jugador del *team1* han sido en casa.'
     },
     {
         text: 'Partidazo de ' + Delanteros.getRandom() + '.'
@@ -536,7 +537,7 @@ exports.getRandom = function(){
         text: Delanteros.getRandom() + ', de penalti, rescató al campeón de Europa.'
     },
     {
-        text: 'Buffon fue expulsado en el descuento.'
+        text: Porteros.getRandom() + ' fue expulsado en el descuento.'
     },
     {
         text: 'Desaprovechando oportunidades así, *team1* lo tiene muy complicado.'
@@ -641,7 +642,7 @@ exports.getRandom = function(){
         text: 'Último partido de Mertesacker.'
     },
     {
-        text: 'Fiesta en la despedida de Wenger ante su afición.'
+        text: 'Fiesta en la despedida de ' + Managers.getRandom() + ' ante su afición.'
     },
     {
         text: 'El rendimiento de ' + Delanteros.getRandom() + ' sigue dando puntos al *team1*.'
@@ -680,7 +681,7 @@ exports.getRandom = function(){
         text: '*team1* sobrevivió por un jugador extraordinario. Pegada pura.'
     },
     {
-        text: 'No tuvo su noche De Gea.'
+        text: 'No tuvo su noche ' + Porteros.getRandom() + '.'
     },
     {
         text: Delanteros.getRandom() + ' brilló para rescatar a los suyos.'
@@ -713,7 +714,7 @@ exports.getRandom = function(){
         text: 'Le faltó mordiente arriba a *team1*. De más a menos totalmente.'
     },
     {
-        text: 'Keylor Navas salvó a los suyos de un resultado mayor.'
+        text: Porteros.getRandom() + ' salvó a los suyos de un resultado mayor.'
     },
     {
         text: 'Muy interesante seguir el torneo del serbio ' + Medios.getRandom() + '.'

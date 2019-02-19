@@ -33,6 +33,9 @@ exports.getRandom = function() {
     },
     {
         text: 'Solskjaer'
+    },
+    {
+        text: 'Wenger'
     }];
 
   return managers[Math.floor(Math.random() * managers.length)].text;
